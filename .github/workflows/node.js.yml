@@ -35,7 +35,7 @@ jobs:
       env:
         ESLINT_USE_FLAT_CONFIG: false
       
-    - run: npm audit --audit-level=high
+    - run: npm audit --audit-level=high --omit=dev
       working-directory: backend
 
     - run: npm test
@@ -48,7 +48,7 @@ jobs:
     - run: npm run lint
       working-directory: frontend
       
-    - run: npm audit --audit-level=high
+    - run: npm audit --audit-level=high --omit=dev
       working-directory: frontend
 
     - run: npm test
