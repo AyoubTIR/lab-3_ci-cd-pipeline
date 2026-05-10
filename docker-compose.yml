@@ -1,11 +1,11 @@
 # version: "3.8"
 services:
   backend:
-    image: khintervenant/ci-cd-testing-deploy:backend
+    image: ayoubtir/backend:latest
     ports:
       - "3001:3001"
 
   frontend:
-    image: khintervenant/ci-cd-testing-deploy:frontend
+    image: ayoubtir/frontend:latest
     ports:
       - "3000:3000"
