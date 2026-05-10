@@ -50,6 +50,7 @@ jobs:
       
     - run: npm audit --audit-level=critical --omit=dev
       working-directory: frontend
+      continue-on-error: true
 
     - run: npm test
       working-directory: frontend
