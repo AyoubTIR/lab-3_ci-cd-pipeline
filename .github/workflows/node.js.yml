@@ -27,6 +27,8 @@ jobs:
     # ------- Backend --------
     - run: npm ci
       working-directory: backend
+      env:
+        ESLINT_USE_FLAT_CONFIG: false
       
     - run: npm run lint
       working-directory: backend
